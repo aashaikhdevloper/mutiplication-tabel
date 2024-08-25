@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styel.css">
+    <title>multiplication tabel generator</title>
+
+
+</head>
+
+<body>
+    <center>
+        <h1>multiplication tabel generator</h1>
+
+        <input type="number" id="number" /><br>
+        <button onclick="generatetabel()">submit</button>
+        <br>
+        <hr>
+        <div id="display"></div>
+
+        <script>
+
+
+            function generatetabel() {
+                var getData = document.getElementById("number").value;
+                var putData = document.getElementById("display");
+                var i, temp
+                for (i = 1; i <= 10; i++) {
+                    putData.innerHTML += getData + "*" + i + "=" + getData * i + "<br>";
+
+                }
+            }
+        </script>
+
+
+    </center>
+</body>
+
+</html>
